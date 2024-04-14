@@ -1,0 +1,51 @@
+const formatDate = date => new Date(date).toLocaleDateString();
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+kiwi
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+ + banana
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+false + 11
+const greet = name => `Hello, ${name}!`;
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+62 / 93
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+apple - false
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const getUniqueValues = array => [...new Set(array)];
+2,62,84,17,95,25,76,33,78,43,34,5,74,20,77,32,36,95,53,66,63,17,3,91,80,22,19,71,3,29,59,62,59,20,94,97,37,65,96,97,17,15,3,19,63,45,42,97,28,69,36,71,48,6,34,36,80,17,53,19,81,24,38,20,90,81,85,98,6 + 10
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const greet = name => `Hello, ${name}!`;
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+false / false
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+kiwi - grape
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+93,69,53,51,88,70,82,83,90,28,55,80,50,43,54,9,14,14,48,39,52,0,56,26,85,92,89,79,96,44,65,70,38,12,11,49,36,60,74,66,30,72,79,53,90,96,66,91,52,26,15,77,74,93,6,59,29,92,19,81,56,24,76,52,75,72,40,57,1,71,76,99,23,33,72,10,48 + 12,39,90,74,74,86,56,57,10,30,79,62,73,88,43,16,99,89,86,6,27,61,85,25,85,92,39,96,75,56,99,96,38,40,21,26,7,1,5,93,79,23,29,19,30,8,64,43,39,62,11,80,63,8,12,27,28,46,56,94,34,50,52,92,73,1,65,90,97,41,48,98,75,16,24,35,65,44,18,8,33,43,16
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+apple
+
+const greet = name => `Hello, ${name}!`;
